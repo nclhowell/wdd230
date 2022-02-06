@@ -1,8 +1,8 @@
-let imagesToLoad = document.querySelectorAll('img[data-src]');
+let imagesToLoad = document.querySelectorAll('img[fat-data]');
 const loadImages = (image) => {
-  image.setAttribute('src', image.getAttribute('data-src'));
+  image.setAttribute('src', image.getAttribute('fat-data'));
   image.onload = () => {
-    image.removeAttribute('data-src');
+    image.removeAttribute('fat-data');
   };
 };
 
