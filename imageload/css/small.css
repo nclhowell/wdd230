@@ -3,12 +3,21 @@
 	margin: 2;
 	padding: 2;
 }
+<<<<<<< HEAD
 img
 {
 max-width: 100%;
 max-height: 100%;
 }
 
+=======
+
+/* img {
+	max-width:100%;
+	height:auto;
+	max-height:100%;
+} */
+>>>>>>> a8a69c7c8d64053f3e4bfb6775bdf0e81f0aeb0a
 h1 {
 	font-size: 1.5rem;
 }
@@ -18,8 +27,16 @@ main {
 	border: .5rem rgba(0, 0, 0, 0.2);
 	padding: .5rem;
 	background-color: rgb(182, 216, 172);
+<<<<<<< HEAD
 	display: grid;
 	grid-template-rows: 1fr;
 	grid-template-columns: 1fr;
 	align-items: center;
 }
+=======
+	/*display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: auto;
+	width: 100%;*/
+}
+>>>>>>> a8a69c7c8d64053f3e4bfb6775bdf0e81f0aeb0a
