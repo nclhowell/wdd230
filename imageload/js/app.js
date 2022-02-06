@@ -9,4 +9,4 @@ const loadImages = (image) => {
 imagesToLoad.forEach((img) => {
   loadImages(img);
 });
-}, 3000);
+}, 5000);
