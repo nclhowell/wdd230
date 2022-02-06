@@ -8,4 +8,4 @@ const loadImages = (image) => {
 
 setTimeout(() => { imagesToLoad.forEach((img) => {
   loadImages(img);
-})}, 5000)
+})}, 1000)
