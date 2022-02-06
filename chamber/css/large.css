@@ -1,0 +1,23 @@
+/* Desktop View Size */ 
+@media only screen and (min-width: 700px) {
+	.grid-boxes {
+	  grid-template-columns: 1fr 1fr 1fr;
+	  grid-template-rows: 1fr 1fr 1fr;
+	}
+	footer {
+		grid-template-columns: 1fr 1fr 2fr 1fr;
+	}
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+}

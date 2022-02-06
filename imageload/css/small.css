@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+* {
+	margin: 1;
+	padding: 1;
+}
+
+img {
+	max-width:100%;
+	height:auto;
+	max-height:100%;
+}
+h1 {
+	font-size: 1.5rem;
+}
+
+main {
+	margin: 0.5rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 0.5rem;
+	background-color: rgb(182, 216, 172);
+	/*display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: auto;
+	width: 100%;*/
+}
