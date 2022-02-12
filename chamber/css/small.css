@@ -5,31 +5,29 @@
 	box-sizing: inherit;
   }
   
-  
   body {
 	background-color: #abbdba;
 	color: #F3EFF5;
 	font-size: 16px;
 	line-height: 1.5;
 	font-family: "Courgette", Ubuntu, sans-serif;
-	padding: 0;
+	padding: .5fr; 
 	margin: 0;
   }
-  
+
   header {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr; 
 	grid-column: page-start / page-end;
 	grid-row: header-start / header-end;
-	
 	background-color: #4a554a;
 	box-shadow: 5px 5px 5px rgb(0,0,0);
-
 	justify-content: center;
 	align-items: center;
 	text-align: center;
   }
+
   footer {
 	display: grid;
 	grid-template-columns: 1fr; 
@@ -42,6 +40,10 @@
 	text-align: left;
 	justify-items: center;
   }
+  img {
+	  max-height: 100%;
+	  max-width: 100%;
+  }
 
   .container {
 	margin-top: 5px;
@@ -52,9 +54,8 @@
   }
   
   .grid-boxes {
-	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr;
+	/* grid-template-rows: 1fr;*/
 	grid-gap: 5px;
 	justify-content: center;
 	align-items: center;
