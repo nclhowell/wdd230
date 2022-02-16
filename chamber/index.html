@@ -46,8 +46,14 @@
         </div>
         <div class="box" id="hero">
           <h3>Hero Image</h3>
-          <img src="images/wdd230large.jpg" alt="Nice Image" srcset="images/wdd230large.jpg 1400w, images/wdd230medium.jpg 480w, 
-                       images/wdd230small.jpg 380w" sizes="(min-width: 700px) 720px, 240px, 100vw"> 
+          <!-- <img src="images/wdd230large.jpg" alt="Nice Image" srcset="images/wdd230large.jpg 1400w, images/wdd230medium.jpg 480w, 
+                       images/wdd230small.jpg 380w" sizes="(min-width: 700px) 720px, 240px, 100vw"> -->
+<picture>
+  <source srcset="images/wdd230large.jpg" media="(min-width: 1400px)" />
+  <source srcset="images/wdd230medium.jpg" media="(min-width: 800px)" />
+   <source srcset="images/wdd230small.jpg" media="(min-width: 700px)" />
+  <img src="wdd230large.jpg" alt="Nice Pic!"/>
+</picture>
         
         </div>
         <div class="box" id="weather">
