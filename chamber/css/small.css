@@ -1,185 +1,174 @@
-body {
-  	display: grid;
-  	grid-template-columns: repeat(4, minmax(0, 1fr));
-  	/*grid-template-areas: 
+* {
+	box-sizing: border-box;
+	font-family: "Courgette", Ubuntu, sans-serif;
+}
+
+body .grid-boxes {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	/*justify-content: center;*/
+	grid-gap: 15px;
+	padding: 5px;
+	margin: 10px;
+	list-style: none;
+	text-align: center;
+	/*grid-template-areas: 
 	"header header header header header header"
 	"menu menu menu menu menu menu"
 	"boxes boxes boxes boxes boxes boxes"
 	"footer footer footer footer footer footer"
 	;*/
-  	background-color: #abbdba;
-  	color: #F3EFF5;
-  	font-size: 16px;
-  	line-height: 1.5;
-  	font-family: "Courgette", Ubuntu, sans-serif;
-  	margin: 0;
-  }
+	background-color: #4a8b80;
+	color: #F3EFF5;
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 0;
+}
 
-  header {
-  	grid-column: 1/-1;
-  	background-color: #4a554a;
-  	box-shadow: 5px 5px 5px rgb(0, 0, 0);
-  	justify-content: center;
-  	align-items: center;
-  	text-align: center;
-  }
+header {
+	grid-column: 1/-1;
+	background-color: #4a554a;
+	box-shadow: 5px 5px 5px rgb(0, 0, 0);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
 
-  footer {
-  	grid-column: 1/-1;
-  	/*grid-column: page-start / page-end;
-	grid-row: footer-start / footer-end;*/
-  	background-color: #4a554a;
-  	box-shadow: 5px 5px 5px rgb(0, 0, 0);
-  	justify-content: center;
-  	align-items: center;
-  	text-align: left;
-  	justify-items: center;
-  }
+footer {
+	grid-column: 1/-1;
+	background-color: #4a554a;
+	box-shadow: 5px 5px 5px rgb(0, 0, 0);
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+	justify-items: center;
+}
 
-  img {
-  	max-height: 100%;
-  	max-width: 90%;
-  }
+picture {
+	max-height: 100%;
+	max-width: 100%;
+}
 
+.box img {
+	max-height: 100%;
+	max-width: 100%;
+	text-align: center;
+	padding-bottom: 5px;
+	box-shadow: 5px 5px 10px black;
+}
 
-  .grid-boxes {
-  	grid-column: 2/4;
-  	grid-gap: 5px;
-  	justify-content: center;
-  	align-items: center;
-  	text-align: center;
-  }
+#menu1 {
+	margin: 10px;
+	width: 1000px;
+}
 
-  .box {
-    
-  	padding-bottom: 5px;
-  	box-shadow: 5px 5px 10px black;
-  }
+#menu1 li {
+	width: 130px;
+	float: left;
+	margin-left: 2px;
+}
 
-  #menu1 {
-  	margin: 10px;
-  	width: 1000px;
-  }
+#event {
+	background-color: #7EA2AA;
+	grid-column: 1/4;
+}
 
-  #menu1 li {
-  	width: 130px;
-  	float: left;
-  	margin-left: 2px;
-  }
+#hero {
+	background-color: #31857a;
+}
 
-  #event {
-  	background-color: #7EA2AA;
-  }
+#weather {
+	background-color: #1C6E8C;
+}
 
-  #hero {
-  	grid-column: 2/3;
-  	background-color: #31857a;
-  }
+#news {
+	background-color: #274156;
+}
 
-  #weather {
-  	background-color: #1C6E8C;
-  }
+#spot1 {
+	background-color: #373a0e;
+}
 
-  #news {
-  	background-color: #274156;
-  }
+#spot2 {
+	background-color: #bdb066;
+}
 
-  #spot1 {
-  	background-color: #373a0e;
-  }
+nav {
+	background-color: #050708;
+	text-align: center;
+	box-shadow: 0 2px 15px rgb(0, 0, 0);
+	margin: 0 auto;
+}
 
-  #spot2 {
-  	background-color: #bdb066;
-  }
+nav ul {
+	list-style: none;
+	display: block;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
 
-  nav {
-  	background-color: #050708;
-  	text-align: center;
-  	box-shadow: 0 2px 15px rgb(0, 0, 0);
-  	margin: 0 auto;
-  }
+nav ul li a {
+	list-style: none;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+	background: linear-gradient(90deg, transparent, rgb(48, 91, 110), transparent) top var(--d, 0) 10px no-repeat;
+	transition: 0.5s;
+}
 
-  nav ul {
-  	list-style: none;
-  	display: block;
-  	margin: 0;
-  	padding: 0;
-  	overflow: hidden;
-  }
+nav a:hover {
+	--d: 75%;
+}
 
-  nav ul li a {
-  	list-style: none;
-  	color: #fff;
-  	text-align: center;
-  	padding: 0.75rem;
-  	text-decoration: none;
-  	font-size: 0.95rem;
-  	background: linear-gradient(90deg, transparent, rgb(48, 91, 110), transparent) top var(--d, 0) 10px no-repeat;
-  	transition: 0.5s;
-  }
+.active {
+	color: rgb(107, 126, 113);
+}
 
-  nav a:hover {
-  	--d: 75%;
-  }
+/* Small/Phone View ***************/
+nav {
+	margin: 0 auto;
+	max-width: 760px;
+	background-color: rgb(65, 82, 74);
+}
 
-  .active {
-  	color: rgb(107, 126, 113);
-  }
+.navigation {
+	list-style: none;
+	padding: 0;
+}
 
-  /* Small/Phone View ***************/
-  nav {
-  	margin: 0 auto;
-  	max-width: 760px;
-  	background-color: rgb(65, 82, 74);
-  }
+.navigation li:first-child {
+	display: block;
+}
 
-  .navigation {
-  	list-style: none;
-  	padding: 0;
-  }
+.navigation li {
+	display: none;
+}
 
-  .navigation li:first-child {
-  	display: block;
-  }
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: rgb(80, 139, 107);
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
 
-  .navigation li {
-  	display: none;
-  }
+.navigation a.ham::before {
+	content: " \2263 ";
+}
 
-  .navigation a {
-  	display: block;
-  	padding: 0.75rem;
-  	text-align: left;
-  	text-decoration: none;
-  	color: rgb(80, 139, 107);
-  	font-weight: 700;
-  	transition: 0.5s;
-  	font-size: clamp(1rem, 2vmin, 1.5rem);
-  }
-
-  .navigation a.ham::before {
-  	content: " \2263 ";
-  	/*content: "🍔 ";*/
-  }
-
-  .navigation a:hover {
-  	color: white;
-  	background-color: rgb(80, 139, 107);
-  }
-
-  /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
-  <ul class="navigation responsive">
-*/
-  .responsive li {
-  	display: block;
-  }
-
-<<<<<<< HEAD
-  .responsive a.ham::before {
-  	content: "❌ ";
-  }
-=======
+.navigation a:hover {
+	color: white;
+	background-color: rgb(80, 139, 107);
+}
+.responsive li {
+	display: block;
+}
 .responsive a.ham::before {
 	content: "❌ ";
 }
->>>>>>> f4e706053b70627ab146379a97c599e6c706bae8

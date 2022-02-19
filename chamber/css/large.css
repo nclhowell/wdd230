@@ -1,8 +1,7 @@
 /* Desktop View Size */ 
 @media only screen and (min-width: 700px) {
-	.grid-boxes {
-	  grid-template-columns: 1fr 1fr 1fr;
-	  grid-template-rows: 1fr 1fr 1fr;
+	body .grid-boxes {
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 	}
 	footer {
 		grid-template-columns: 1fr 1fr 2fr 1fr;
