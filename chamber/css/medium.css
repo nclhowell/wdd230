@@ -2,7 +2,7 @@
   
 @media only screen and (min-width: 400px) {
 	body .grid-boxes {
-		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		/*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
 	}
 	footer {
 		grid-template-columns: 1fr 1fr;
