@@ -1,0 +1,54 @@
+html {
+	font-family: Ubuntu, sans-serif;
+  }
+  body {
+	  display: grid;
+	  grid-template-columns: 1fr; 
+	  background-color: rgb(138, 67, 77);
+
+  }
+  
+  caption {
+	border: 10px solid rgb(100, 36, 36);
+	background-color: rgb(231, 173, 173);
+	letter-spacing: 1px;
+	font-weight:bolder;
+	font-size: 2rem;
+
+  }
+  table {
+	margin-left:auto;
+	margin-right:auto;
+	width:50%;
+	border-collapse: collapse;
+	border: 2px solid rgb(200,200,200);
+	letter-spacing: 1px;
+	font-size: 0.8rem;
+  }
+  
+  td, th {
+	border: 1px solid rgb(190,190,190);
+	padding: 10px 20px;
+  }
+  
+  th {
+	background-color: rgb(235,235,235);
+  }
+  
+  td {
+	text-align: center;
+  }
+  
+  tr:nth-child(even) td {
+	background-color: rgb(240, 192, 192);
+  }
+  
+  tr:nth-child(odd) td {
+	background-color: rgb(225, 226, 228);
+  }
+  
+  tfoot {
+	background-color: rgb(240, 192, 192);
+	border: 1px solid rgb(190,190,190);
+	padding: 10px 20px;
+  }
