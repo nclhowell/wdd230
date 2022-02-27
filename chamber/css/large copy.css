@@ -1,0 +1,50 @@
+/* Desktop View Size */ 
+@media only screen and (min-width: 1280px) {
+	#before
+	{
+		grid-column: 1 / -1; 
+		font-size: 1.5rem;
+	}
+	#after
+	{
+		grid-column: 1 / -1; 
+		font-size: 1.5rem;
+		
+	}
+	footer {
+		grid-column: 1fr 1fr 2fr 1fr;
+	}
+	.navigation {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+	}
+	.navigation li {
+		display: block;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+	h1 {
+		max-width: 64rem;
+		margin: auto;
+		font-size: 2.5rem;
+	}
+	h1 #days {
+		max-width: 64rem;
+		margin: auto;
+		font-size: .5rem;
+	}
+	
+    header, nav, main, footer, form {
+        max-width: 64rem;
+        margin:auto;
+    }
+
+	form label.sbs {
+    padding: .4rem 0;
+	}
+
+}

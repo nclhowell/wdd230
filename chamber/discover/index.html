@@ -19,96 +19,98 @@
 </head>
 
 <body>
-  <header>
-    <h1>
+  <header class="header">
+    <h1 class="headliner">
       <img src="../img/smallmtb.webp" alt="Mountain Biker Logo">
-      Discover endless singletrack in Gnarville 
-    </h1>
+      Discover endless singletrack in Gnarville
     <div>
       <date id="date">Nothing Booger</date>
       <p></p>
     </div>
+    </h1>
     <div>
-      <nav>
+      <nav class="menu">
         <ul class="navigation">
           <li><a class="ham" href="#">Menu</a></li>
-          <li><a href="../">Home</a></li>
+          <li><a href="../../">Home</a></li>
           <li><a href="#">Directory</a></li>
-          <li><a href="./"> Discover</a></li>
+          <li><a href="#">Discover</a></li>
+          <li><a href="../join/join.html"> Join</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </div>
     <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
     <hr>
-    <h1>It has been <span class="today"></span> days since your last visit</h1>
+    <h1 class="days">It has been <span class="today"></span> days since your last visit</h1>
   </header>
-  <div class="container">
-    <div class="grid-boxes">
-     <div class="box" id="before">
-        <h3>Before Discovering Gnarville</h3>
-      <picture>
-        <img src='img/template.jpg' fat-data='img/fat-data/smallmtbselfienofilter.jpg' alt='Primary Image'>
-    </picture>
+
+    <div class="container">
+    <div class="grid-box">
+      <div class="box" id="before">
+        <picture>
+          <img src='img/template.jpg' fat-data='img/fat-data/smallmtbselfienofilter.jpg' alt='Primary Image'>
+        </picture>
+        <h3>Before Gnarville</h3>
       </div>
-     <div class="box" id="after">
-        <h3>After Discovering Gnarville</h3>
-      <picture>
-        <img src='img/template.jpg' fat-data='img/fat-data/smallmtbselfiefiltered.jpg' alt='Primary Image'>
-    </picture>
+      <div class="box" id="after">
+        <picture>
+          <img src='img/template.jpg' fat-data='img/fat-data/smallmtbselfiefiltered.jpg' alt='Primary Image'>
+        </picture>
+        <h3>After Gnarville</h3>
       </div>
-     <div class="box" id="event">
+      <div class="box" id="event">
+        <picture>
+          <img src='img/template.jpg' fat-data='img/fat-data/smallClearwater.jpg' alt='Primary Image'>
+        </picture>
         <h3>Ride Here....</h3>
-      <picture>
-        <img src='img/template.jpg' fat-data='img/fat-data/smallClearwater.jpg' alt='Primary Image'>
-    </picture>
       </div>
       <div class="box" id="hero">
         <h3>Or Here....</h3>
-    <picture>
-        <img src='img/template.jpg' fat-data='img/fat-data/smallCraterlake.jpg' alt='big slow Craterlake'>
-    </picture>
+        <picture>
+          <img src='img/template.jpg' fat-data='img/fat-data/smallCraterlake.jpg' alt='big slow Craterlake'>
+        </picture>
       </div>
       <div class="box" id="weather">
+        <picture>
+          <img src='img/template.jpg' fat-data='img/fat-data/smallSpence.jpg' alt='big slow Spence'>
+        </picture>
         <h3>Or Here....</h3>
-    <picture>
-        <img src='img/template.jpg' fat-data='img/fat-data/smallSpence.jpg' alt='big slow Spence'>
-    </picture>
       </div>
       <div class="box" id="news">
         <h3>Or Here....</h3>
-    <picture>
-        <img src='img/template.jpg' fat-data='img/fat-data/smalllake.jpg' alt='big slow bigCCsunset'>
-    </picture>
+        <picture>
+          <img src='img/template.jpg' fat-data='img/fat-data/smalllake.jpg' alt='big slow bigCCsunset'>
+        </picture>
       </div>
       <div class="box" id="spot1">
+        <picture>
+          <img src='img/template.jpg' fat-data='img/fat-data/smallbeachsunset.jpg' alt='big slow bigFortb'>
+        </picture>
         <h3>Or Here....</h3>
-    <picture>
-        <img src='img/template.jpg' fat-data='img/fat-data/smallbeachsunset.jpg' alt='big slow bigFortb'>
-    </picture>
       </div>
       <div class="box" id="spot2">
         <h3>Or Here....</h3>
-    <picture>
-        <img src='img/template.jpg' fat-data='img/smallwaterfall.jpg' alt='big slow bigFortb'>
-    </picture>
+        <picture>
+          <img src='img/template.jpg' fat-data='img/fat-data/smallwaterfall.jpg' alt='big slow bigFortb'>
+        </picture>
       </div>
-    <div class="box" id="spot2">
+      <div class="box" id="spot3">
+        <picture>
+          <img src='img/template.jpg' fat-data='img/fat-data/smallyosemite.jpg' alt='big slow bigFortb'>
+        </picture>
         <h3>Or Here....</h3>
-    <picture>
-        <img src='img/template.jpg' fat-data='img/smallyosemite.jpg' alt='big slow bigFortb'>
-    </picture>
       </div>
+    <footer class="footer">
+      <img src="../img/smallmtb.png" alt="MTB">
+      <span id="yeartoday"> </span>
+      Layne Howell WDD230 Project| Contact Gnarvillechamber@gnarville.com (888) 555-1212 All Rights Reserved<br>
+      <span id="todaydate"></span>
+    </footer>
     </div>
-  </div>
+    </div>
 
-  <footer>
-    <img src="./images/smallmtb.png" alt="MTB">
-    <span id="yeartoday"> </span>
-    Layne Howell WDD230 Project| Contact Gnarvillechamber@gnarville.com (888) 555-1212 All Rights Reserved
-    <span id="todaydate"></span>
 
-  </footer>
   <script src="./js/visitors.js"></script>
   <script src="../js/app.js"></script>
   <script src="../js/todaydate.js"></script>

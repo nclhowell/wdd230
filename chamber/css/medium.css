@@ -1,10 +1,26 @@
 /* Tablet View Size  */
   
-@media only screen and (min-width: 400px) {
-	body .grid-boxes {
-		/*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+@media only screen and (min-width: 780px) {
+	#before
+	{
+	grid-column: 1/ -1;
+	font-size: 1.5rem;
+	}
+	#after
+	{
+	grid-column: 1/ -1;
+	font-size: 1.5rem;
+	}
+	/*body {
+		max-width: 64rem;
+		margin: 8%;
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 	}
 	footer {
 		grid-template-columns: 1fr 1fr;
 	}
-}
+	h1 {
+	max-width: 64rem;
+	font-size: 1.5rem;
+	}*/ 
+} 
