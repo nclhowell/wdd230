@@ -79,6 +79,15 @@ function listfunction() {
         let li2 = document.createElement('li');
         let li3 = document.createElement('li');
         let li4 = document.createElement('li');
+
+        li1.setAttribute("class", "bizname");
+        
+        // att.value = "square";
+        /*const bizbullet = document.createAttribute("list-style-type");
+        bizbullet.value = "none";
+        const bizname = document.getElementByTagName("li")[0];
+        bizname.setAttributeNode(biznamebullet);*/
+
         // Change the textContent property of the h2 element to contain the biz info 
         li1.innerHTML = `${biz.name}`;
         li2.innerHTML = `${biz.address}`;
@@ -95,6 +104,5 @@ function listfunction() {
         // Add/append the existing HTML div with the cards class with the section(card)
         cards.appendChild(list1);
     }
-
     return null;
 }

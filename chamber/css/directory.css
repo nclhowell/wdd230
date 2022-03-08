@@ -79,8 +79,18 @@ p {
 	font-family: Courgette;
 	}
 
+ul {
+	color: whitesmoke; 
+	list-style-type: none;
+	font-weight: normal;
+}
+.bizname {
+	color: #ee865d;
+	font-weight: bold;
+}
+	
 header {
-	color: whitesmoke;
+	color: burlywood;
 	background-color: transparent;
 	grid-column: 1/-1;
 	box-shadow: 5px 5px 5px rgb(0, 0, 0);
