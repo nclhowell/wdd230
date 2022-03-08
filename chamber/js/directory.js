@@ -74,23 +74,26 @@ function listfunction() {
 
     function displayCards(biz) {
         // Create elements to add to the document
-        let card = document.createElement('section');
-        let h1 = document.createElement('h1');
-        let h2 = document.createElement('h2');
-        // let portrait = document.createElement('img');
-        let p = document.createElement('p');
+        let list1 = document.createElement('ul');
+        let li1 = document.createElement('li');
+        let li2 = document.createElement('li');
+        let li3 = document.createElement('li');
+        let li4 = document.createElement('li');
         // Change the textContent property of the h2 element to contain the biz info 
-        h1.innerHTML = `${biz.name}`;
-        h2.innerHTML = `${biz.address}<br>${biz.phone}`;
-        p.textContent = `${biz.pitch}`;
+        li1.innerHTML = `${biz.name}`;
+        li2.innerHTML = `${biz.address}`;
+        li3.textContent = `${biz.phone}`;
+        li4.textContent = `${biz.pitch}`;
 
         // Add/append the section(card) with the h2 element
         // card.appendChild(portrait);
-        card.appendChild(h1);
-        card.appendChild(h2);
+        list1.appendChild(li1);
+        list1.appendChild(li2);
+        list1.appendChild(li3);
+        list1.appendChild(li4);
 
         // Add/append the existing HTML div with the cards class with the section(card)
-        cards.appendChild(card);
+        cards.appendChild(list1);
     }
 
     return null;
