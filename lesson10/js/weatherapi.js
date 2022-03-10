@@ -1,5 +1,5 @@
 //  function to pull in weather 
-const requestURL = "http://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=imperial&APPID=efe08699ddd1c3e69ab9fb7992f15d2a";
+const requestURL = "https://api.openweathermap.org/data/2.5/weather?q=Fairbanks,Alaska&units=imperial&appid=efe08699ddd1c3e69ab9fb7992f15d2a";
 // const cards = document.querySelector('.cards');
 fetch(requestURL)
     .then(function (response) {
