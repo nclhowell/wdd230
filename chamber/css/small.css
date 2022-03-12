@@ -8,6 +8,19 @@ body {
 	max-width: fit-content;
 }
 
+figcaption, #weather, #weathericon, #weather p 
+{
+	background-color: transparent;
+	color: whitesmoke;
+	text-align: center;
+
+}
+#weather p {
+	text-align: center;
+	margin-left: 2rem;
+}
+
+
 .container {
 	display: grid;
 	max-width: 100%;
@@ -16,9 +29,8 @@ body {
 	border-radius: 10%;
 }
 
-.grid-box {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px,  1fr));
+.grid-boxes {
+	grid-template-columns: repeat(auto-fit, minmax(300px,  1fr));
 	text-align: center;
 	margin: 1.5%;
 	grid-gap: 2%;
@@ -27,8 +39,8 @@ body {
 	font-size: 1rem;
 	line-height: 1.5;
 	border-radius: 10%;
-	box-shadow: 5px 5px 5px rgb(0, 0, 0);
-	background-color:rgb(28, 32, 51)
+	/*box-shadow: 5px 5px 5px rgb(0, 0, 0);
+	background-color:rgb(28, 32, 51)*/
 }
 
 span.label,
@@ -79,8 +91,7 @@ picture {
 	max-width: 100%;
 }
 
-.box,
-img {
+.box, img {
 	max-height: 100%;
 	max-width: 100%;
 	text-align: center;
@@ -109,9 +120,9 @@ img {
 	background-color: #31857a;
 }
 
-#weather {
+/*#weather {
 	background-color: #1C6E8C;
-}
+}*/
 
 #news {
 	background-color: #274156;
