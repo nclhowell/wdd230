@@ -2,8 +2,7 @@
 	font-family: "Courgette", Ubuntu, sans-serif;
 	/*background-color: #4a554a;*/
 	align-items: center;
-	padding: .1rem;
-
+    margin: .5px;
 }
 
 body {
@@ -28,7 +27,18 @@ p, #slogan {
 	background-color: transparent;
 	font-size: .6em;
 }
+.info{
+	margin: 1.5rem;
+}
+.info p {
+color: #050708;
+font-size: 1.5em;	
+}
 
+.info h1 {
+	color: #050708;
+ 	font-size: 1.8em;	
+} 
 
 figcaption,
 #weathericon,
@@ -65,8 +75,7 @@ figcaption,
 }
 
 span.label,
-h1,
-.visits {
+h1, .visits {
 	background-color: transparent;
 	color: burlywood;
 	font-size: 1.5rem;
@@ -86,12 +95,21 @@ h3 {
 }
 
 header {
+	display: grid;
 	color: rgb(135, 222, 157);
-	/*grid-column: 1/-1;*/
 	background-color: #274156;
 	/*background-color: #4a554a;*/
 	box-shadow: 5px 5px 5px rgb(0, 0, 0);
-	text-align: left;
+	text-align: center;
+	grid-gap: 1rem;
+	justify-content: auto;
+	padding: .5em;
+	/*grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));*/
+
+}
+
+.social {
+	justify-content: left;
 }
 
 footer {
@@ -100,7 +118,6 @@ footer {
 	background-color: #274156;
 	/*	background-color: #4a554a;*/
 	box-shadow: 5px 5px 5px rgb(0, 0, 0);
-	justify-content: right;
 	justify-content: right;
 	align-items: center;
 	text-align: center;
