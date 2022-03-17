@@ -28,6 +28,7 @@ function gridfunction() {
     function displayCards(biz) {
         // Create elements to add to the document
         let card = document.createElement('section');
+        // section.setAttribute('class', "dir");
         let h1 = document.createElement('h1');
         let h2 = document.createElement('h2');
         let portrait = document.createElement('img');
@@ -35,7 +36,6 @@ function gridfunction() {
         // Change the textContent property of the h2 element to contain the prophet's full name
         h1.innerHTML = `${biz.name}`;
         h2.innerHTML = `${biz.address}<br>${biz.phone}`;
-
         p.textContent = `${biz.pitch}`;
 
         // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).

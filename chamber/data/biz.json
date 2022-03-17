@@ -90,6 +90,13 @@
       "pitch": "Let Moe's help you master your journey",
       "phone":  "541-555-1212",
       "logo": "data/moes.png"
+    },
+    {
+      "name": "Nancy's Neferious Nachos",
+      "address": "6729 Nopalitos Gnarway",
+      "pitch": "Nancy's nachos never negotiate",
+      "phone":  "541-555-1212",
+      "logo": "data/nancys.png"
     }
   ]
 }

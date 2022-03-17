@@ -12,24 +12,36 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/directory.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/small.css">
+  <link rel="stylesheet" href="./css/medium.css">
+  <link rel="stylesheet" href="./css/large.css">
 </head>
 
 <body>
-<header>
-    <h1>
-      Welcome to Gnarville 
-      <p></p>
-    </h1>
+    <header>
+      <h1> <img class="iconimg" src="./img/smallmtb.webp" alt="Mountain Biker Logo">
+        Gnarville Business Directory<span id="slogan"></span></h1>
+      <headdate id="headerdate">Nothing Booger</headdate>
+      <div class="social">
+        <a href="https://facebook.com" target="_blank"><img src="img/smallfacebook.png" alt="Facebook icon"></a>
+        <a href="https://twitter.com" target="_blank"><img src="img/smalltwitter.png" alt="Twitter icon"></a>
+        <a href="https://instagram.com" target="_blank"><img src="img/smallig.png" alt="Instagram icon"></a>
+      </div>
+    </header>
     <div>
-      <date id="date">Nothing Booger</date>
-      <p></p>
+      <nav>
+        <ul class="navigation">
+          <li><a class="ham" href="#">Menu</a></li>
+          <li><a href="./">Home</a></li>
+          <li><a href="./directory.html">Directory</a></li>
+          <li><a href="./discover/"> Discover</a></li>
+          <li><a href="./join.html"> Join</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-  <h1>Gnarville Business Directory</h1>
-      <p></p>
-    </div>
-</header>
+    </header>
 <main>
   <input type="image" id=listbutton class="button listbutton" src="img/list.png"></input>
   <input type="image" id=gridbutton class="button gridbutton" src="img/grid.png"></input>
