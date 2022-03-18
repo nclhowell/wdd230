@@ -12,7 +12,6 @@ body {
 	grid-gap: 1em;
 	color: #63b3a1;
 	align-items: center;
-	justify-content: center;
 }
 
 .newdate {
@@ -62,11 +61,10 @@ figcaption,
 
 
 .formcontainer {
-	display: grid;
 	justify-content: center;
 	max-width: 100%;
 	max-height: 100%;
-	background-color: #4b2c25;
+	background-color: whitesmoke; 
 	border-radius: 5%;
 	padding: 1em;
 }
@@ -201,6 +199,7 @@ picture img {
 
 #spot1 {
 	background-color: #373a0e;
+	max-width: fit-content;
 }
 
 #spot2 {
@@ -325,8 +324,8 @@ form textarea {
 	border: solid 1px rgb(105, 51, 51);
 	border-radius: 4px;
 	padding: .75rem;
-	color: rgb(132, 174, 212);
-	background-color: rgb(10, 19, 59);
+	color:whitesmoke;
+	background-color: #274156;
 }
 
 form label.sbs {
@@ -340,12 +339,13 @@ form input.submitBtn {
 	display: block;
 	font-size: 1rem;
 	border: none;
-	border-radius: 1rem;
-	padding: .75rem 1.5rem;
+	border-radius: 20%;
+	padding: 1em;
 	color: burlywood;
 	background-color: rgb(28, 32, 51);
-	margin: 0 0 2rem 2%;
-	width: 96%;
+	/*margin: 0 0 2rem 2%;*/
+	margin: 2em;
+	width: 90%;
 	max-width: 20rem;
 }
 
@@ -380,12 +380,9 @@ form label.top input:required:valid {
 	margin: 1em;
 	padding: 1em;
 	background-color:transparent;
-	/*background-color: rgb(235, 230, 221);*/
 	background-color: #4a554a;
 	font-size: 1rem;
 	line-height: 1.5;
-	/*border-radius: 2%;
-	box-shadow: 5px 5px 5px rgb(0, 0, 0);*/
 }
 
 .cards section {
@@ -425,6 +422,7 @@ section h2 {
 section p {
 	color: rgb(47, 40, 30);
 	text-align: left;
+	margin-left: 2em;
 	font-family: Courgette;
 	}
 
