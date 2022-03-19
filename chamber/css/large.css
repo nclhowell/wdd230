@@ -3,8 +3,8 @@
 	.grid-boxes {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-		margin: .5em;
-		grid-gap: 2em;
+		margin: .2em;
+		grid-gap: .5em;
 		color: #63b3a1;
 		font-size: 2rem;
 	}

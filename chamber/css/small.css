@@ -2,6 +2,7 @@
 	font-family: "Courgette", Ubuntu, sans-serif;
 	align-items: center;
 	padding: .3px;
+	text-align: center;
 }
 
 body {
@@ -72,11 +73,15 @@ figcaption,
 
 .grid-boxes {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	margin: .1em;
-	grid-gap: .5em;
+	grid-gap: .1em;
 	color: #63b3a1;
 	font-size: 1rem;
+}
+.grid-boxes h4 {
+	padding: .5em;
+	margin: .5em;
 }
 
 span.label,
@@ -93,7 +98,11 @@ h3 {
 	max-width: 80;
 	background-color: transparent;
 	margin-bottom: .5rem;
+	padding: .5rem;
+	padding: .5rem;
 }
+
+
 
 header h4 {
 	color: whitesmoke;
@@ -149,14 +158,17 @@ picture {
 }
 
 .box {
-	text-align: center;
+	text-align: left;
 	padding: .1rem;
 	margin: .1rem;
-	grid-gap: .1rem;
-	/*max-width: 100%;*/
 	border-style: ridge;
 	box-shadow: 5px 5px 10px black;
 	border-radius: 10%;
+}
+section.box img {
+	margin: .3em;
+	max-height: 100%;
+	max-width: 100%;
 }
 
 picture img {
@@ -202,7 +214,7 @@ picture img {
 	max-width: fit-content;
 }
 
-#spot2 {
+#spot2, #spot6 {
 	background-color: #bdb066;
 }
 
@@ -396,7 +408,7 @@ form label.top input:required:valid {
 	color: burlywood;
 }
 section img {
-	*object-position: 1ex 1ex 1ex 1ex;
+	object-position: 1ex 1ex 1ex 1ex;
 	border-radius: 10%;
 	/*margin-top: 5%;
 	margin-bottom: 20%;*/
@@ -437,29 +449,6 @@ ul {
 	font-weight: bold;
 }
 	
-/*header {
-	color: burlywood;
-	background-color: transparent;
-	grid-column: 1/-1;
-	box-shadow: 5px 5px 5px rgb(0, 0, 0);
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-    padding: 1%;	
-}
-
-footer {
-	color: whitesmoke;
-	grid-column: 1/-1;
-	background-color: #4a554a;
-	box-shadow: 5px 5px 5px rgb(0, 0, 0);
-	justify-content: right;
-	justify-content: right;
-	align-items: center;
-	text-align: center;
-	padding: 3%;
-}*/
-
 .button {
 	height: 2.5rem;
 	width: 2.5rem;

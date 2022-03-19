@@ -2,9 +2,9 @@
 
 @media only screen and (min-width: 780px) {
 	.grid-boxes {
-		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-		margin: .5em;
-		grid-gap: 1.5em;
+		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+		margin: .1em;
+		grid-gap: .2em;
 		font-size: 1.5rem;
 	}
 
@@ -32,17 +32,16 @@
 		object-fit: fill;
 		background-color: transparent;
 		box-shadow: none;
-		/*border-radius: 5%;*/
 	}
 
 	footer {
 		grid-template-columns: 1fr 1fr;
 	}
 
-	h1 {
+	/*h1 {
 		max-width: 64rem;
 		font-size: 2.5rem;
-	}
+	}*/
 
 	.formcontainer {
 		display: grid;

@@ -1,6 +1,6 @@
 //  function to pull in weather from openweathermap free API 
 // const requestURL = "https://api.openweathermap.org/data/2.5/weather?q=San Diego,California&units=imperial&appid=efe08699ddd1c3e69ab9fb7992f15d2a";
-const requestURL = "https://api.openweathermap.org/data/2.5/weather?q=Nevada City,California&units=imperial&appid=efe08699ddd1c3e69ab9fb7992f15d2a";
+const requestURL = "https://api.openweathermap.org/data/2.5/weather?q=Downieville,California&units=imperial&appid=efe08699ddd1c3e69ab9fb7992f15d2a";
 // const cards = document.querySelector('.cards');
 fetch(requestURL)
     .then(function (response) {
