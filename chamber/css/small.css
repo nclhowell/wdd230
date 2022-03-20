@@ -137,7 +137,6 @@ footer {
 	color: whitesmoke;
 	grid-column: 1/-1;
 	background-color: #274156;
-	/*	background-color: #4a554a;*/
 	box-shadow: 5px 5px 5px rgb(0, 0, 0);
 	justify-content: right;
 	align-items: center;
@@ -165,10 +164,14 @@ picture {
 	box-shadow: 5px 5px 10px black;
 	border-radius: 10%;
 }
+
 section.box img {
 	margin: .3em;
 	max-height: 100%;
 	max-width: 100%;
+}
+section h4 {
+	color:#050708;
 }
 
 picture img {
@@ -200,10 +203,6 @@ picture img {
 #spot4 {
 	background-color: #31857a;
 }
-
-/*#weather {
-	background-color: #1C6E8C;
-}*/
 
 #news {
 	background-color: #274156;
@@ -253,14 +252,6 @@ nav a:hover {
 	color: rgb(107, 126, 113);
 }
 
-/* Small/Phone View ***************/
-/*nav {
-	margin: 0 auto;
-	max-width: 760px;
-	background-color: rgb(65, 82, 74);
-	border-radius: 10%;
-}
-*/
 .navigation {
 	list-style: none;
 	padding: 0;
@@ -279,7 +270,6 @@ nav a:hover {
 	padding: 0.75rem;
 	text-align: left;
 	text-decoration: none;
-	/*color: rgb(80, 139, 107);*/
 	color: rgb(135, 222, 157);
 	;
 	font-weight: 700;
@@ -307,7 +297,6 @@ nav a:hover {
 form fieldset {
 	margin: 2rem 0;
 	border: 4px solid rgb(80, 139, 107);
-	;
 	border-radius: 10px;
 	padding: .5rem 2%;
 	background-color: #31857a;
@@ -327,6 +316,7 @@ form div {
 	padding-top: 1rem;
 	font-size: .9rem;
 	color: burlywood;
+	text-align: left;
 }
 
 form label.top input,
@@ -346,6 +336,7 @@ form label.sbs {
 	padding-top: .7rem;
 	padding-bottom: .7rem;
 	color: burlywood;
+	text-align: left;
 }
 
 form input.submitBtn {

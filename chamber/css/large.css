@@ -2,9 +2,9 @@
 @media only screen and (min-width: 1080px) {
 	.grid-boxes {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 		margin: .2em;
-		grid-gap: .5em;
+		grid-gap: .3em;
 		color: #63b3a1;
 		font-size: 2rem;
 	}
