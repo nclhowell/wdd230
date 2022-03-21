@@ -329,6 +329,7 @@ form textarea {
 	padding: .75rem;
 	color:whitesmoke;
 	background-color: #274156;
+	text-align: left;
 }
 
 form label.sbs {
