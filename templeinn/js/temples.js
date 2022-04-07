@@ -2,15 +2,15 @@ let templeArray = [];
 let templeArrayOnetemple = []; 
 const templegroup = document.querySelector("#alltemples");
 const featuredtemple = document.querySelector("#featuredtemple");
-let templenum = 0;
 function output(temples)
         {
-            templenum ++; 
             let article = document.createElement('section');
 
             let likebutton = document.createElement('button');
-            likebutton.textContent = "like";
-            likebutton.setAttribute("id", templenum);
+            likebutton.textContent = `Click if you Like the ${temples.likebutton} temple` ;
+            likebutton.style.color = "orange";
+            likebutton.name = `${temples.likebutton}`;
+
 
             let templeName = document.createElement('h3');
             templeName.textContent = temples.templeName;
@@ -112,6 +112,7 @@ return temples.templeName == "FEATURED... Payson Utah Temple";
 }
 
 const url = 'https://nclhowell.github.io/wdd230/templeinn/data/temples.json';
+// const url = './data/temples.json';
 let results = null;
 fetch(url)
 .then((response) => {
