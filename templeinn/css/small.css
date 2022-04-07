@@ -8,7 +8,6 @@
 
 .screen-box {
 	background: -webkit-radial-gradient(10% 30%, #274156, white);
-
 }
 
 body {
@@ -453,10 +452,12 @@ form div {
 
 form label.top input,
 form label.top select,
+
 form textarea {
 	display: block;
 	font-size: 1rem;
-	border: solid 1px border-radius: 4px;
+	border: solid 1px; 
+	border-radius: 4px;
 	padding: .75rem;
 	color: whitesmoke;
 	background-color: #274156;
