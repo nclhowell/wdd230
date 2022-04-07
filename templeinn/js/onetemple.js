@@ -34,7 +34,7 @@ function Onetemple(temples)
 return temples.templeName == "FEATURED... Vernal Utah Temple";
 }
 
-const url = 'data/temples.json';
+const url = 'https://nclhowell.github.io/wdd230/templeinn/data/temples.json';
 let results = null;
 fetch(url)
 .then((response) => {
